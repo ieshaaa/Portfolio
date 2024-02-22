@@ -18,7 +18,7 @@ const projectsData = [
   {
     id: 2,
     title: "EaseMySearch",
-    description: "Admin-centric flight enquiry system. Empowers with secure MySQL database management, server-side validation for data integrity. Use maiID: admin@gmail.com and Password: 12345 for login.",
+    description: "For LOGIN use ( MailID: admin@gmail.com and Password: 12345 ). Admin-centric flight enquiry system. Empowers with secure MySQL database management, server-side validation for data integrity.",
     image: "easemysearch.png",
     techStack: "Nodejs, Expressjs, MySQL, Cloudinary, CleverDB ",
     tag: ["All", "Backend"],

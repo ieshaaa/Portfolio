@@ -13,7 +13,7 @@ const Home = () => {
   const handleResumeClick = () => {
     // Add logic to open the resume PDF when the button is clicked
     // For simplicity, let's assume your PDF file is in the public directory
-    window.open('https://drive.google.com/file/d/1TruDMXNcg_QIxZFHr-qLVMOB7CkbFVuS/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1SyvQf2ZdNbyVbNRyYzFUPeC0ATXtIDF-/view?usp=drive_link', '_blank');
   };
 
   // useEffect(() => {
