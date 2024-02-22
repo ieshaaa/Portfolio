@@ -6,8 +6,16 @@ import toast from 'react-hot-toast';
 // import '../App.css'
 
 const Contact = () => {
+  const initialFormState = {
+    Name: '',
+    Email: '',
+    Mobile: '',
+    Message: '',
+  };
+
   const [submitting, setSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [formData, setFormData] = useState(initialFormState);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,6 +35,8 @@ const Contact = () => {
       }
 
       toast.success('Thanks for contacting me! I will get back to you soon.', { duration: 3000 });
+      setFormData(initialFormState);
+
     } catch (error) {
       console.error(error);
       toast.error("We can't submit the form. Please try again later." , { duration: 3000 });
@@ -34,6 +44,16 @@ const Contact = () => {
       setSubmitting(false);
     }
   };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+
   return (
     <>
       <div id="contact" className="contact-container">
@@ -62,20 +82,32 @@ const Contact = () => {
         // errorBorderColor="red.300"
         placeholder='Name'
         required
+        value={formData.Name}  // Controlled input value
+        onChange={handleInputChange}
         /> 
         <input 
         type='email'
         name='Email'
         placeholder='Email'
         required
+        value={formData.Email}  // Controlled input value
+        onChange={handleInputChange}
         />
         <input 
         type='number'
         name="Mobile"
         placeholder='Mobile'
         required
+        value={formData.Mobile}  // Controlled input value
+        onChange={handleInputChange}
         />
-        <textarea name="Message" placeholder='Message' required/>
+        <textarea 
+        name="Message" 
+        placeholder='Message' 
+        required
+        value={formData.Message}  // Controlled input value
+        onChange={handleInputChange}
+        />
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
 
         <button type='submit' disabled={submitting} className='jump-animation'>Submit</button>

@@ -10,11 +10,11 @@ import Hamburger from './Hamburger';
 const Home = () => {
   // const [scrolled, setScrolled] = useState(false);
 
-  // const handleResumeClick = () => {
-  //   // Add logic to open the resume PDF when the button is clicked
-  //   // For simplicity, let's assume your PDF file is in the public directory
-  //   // window.open('https://drive.google.com/file/d/1TruDMXNcg_QIxZFHr-qLVMOB7CkbFVuS/view?usp=drive_link', '_blank');
-  // };
+  const handleResumeClick = () => {
+    // Add logic to open the resume PDF when the button is clicked
+    // For simplicity, let's assume your PDF file is in the public directory
+    window.open('https://drive.google.com/file/d/1TruDMXNcg_QIxZFHr-qLVMOB7CkbFVuS/view?usp=drive_link', '_blank');
+  };
 
   // useEffect(() => {
   //   // Scroll to the target element when the component mounts
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
         
    <div className="mainbutton">
-    <button style={{backgroundImage: "linear-gradient(to right, #038198, #4adda9dd)", color: 'rgb(37 37 37)'}} >Resume</button>
+    <button style={{backgroundImage: "linear-gradient(to right, #038198, #4adda9dd)", color: 'rgb(37 37 37)'} } onClick={handleResumeClick}>Resume</button>
     <NextLink href="#contact">
           
     <button style={{ backgroundColor: '#303030', color: '#1fbabf' }}>Contact</button>

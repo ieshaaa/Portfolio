@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Racing+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap'); */
 
 
 [type="checkbox"]:checked,
@@ -32,11 +32,17 @@
   left: 0;
   border-top: 2px solid #ececee;
   border-bottom: 2px solid #ececee;
-  transition: border-width 100ms 1500ms ease, 
+  /* transition: border-width 100ms 1500ms ease, 
               top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
               height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
               background-color 200ms ease,
-              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+              transform 200ms cubic-bezier(0.23, 1, 0.32, 1); */
+
+              transition: border-width 150ms ease, 
+              top 150ms ease,
+              height 150ms ease, 
+              background-color 200ms ease,
+              transform 200ms ease;
 }
 .menu-icon:checked + label:after,
 .menu-icon:not(:checked) + label:after{
@@ -50,10 +56,15 @@
   right: 4px;
   background-color: #ececee;
   margin-top: -1px;
-  transition: width 100ms 1750ms ease, 
+  /* transition: width 100ms 1750ms ease, 
               right 100ms 1750ms ease,
               margin-top 100ms ease, 
-              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+              transform 200ms cubic-bezier(0.23, 1, 0.32, 1); */
+
+              transition: width 150ms ease, 
+              right 150ms ease,
+              margin-top 150ms ease, 
+              transform 200ms ease;
 }
 .menu-icon:checked + label:before{
   top: 10px;
@@ -61,21 +72,32 @@
   height: 2px;
   background-color: #ececee;
   border-width: 0;
-  transition: border-width 100ms 340ms ease, 
+  /* transition: border-width 100ms 340ms ease, 
               top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
               height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), 
               background-color 200ms 500ms ease,
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1); */
+
+              transition: border-width 150ms ease, 
+              top 150ms ease,
+              height 150ms ease, 
+              background-color 200ms ease,
+              transform 200ms ease;
 }
 .menu-icon:checked + label:after{
   width: 30px;
   margin-top: 0;
   right: 0;
   transform: rotate(-45deg);
-  transition: width 100ms ease,
+  /* transition: width 100ms ease,
               right 100ms ease,  
               margin-top 100ms 500ms ease, 
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1); */
+
+              transition: width 150ms ease,
+              right 150ms ease,  
+              margin-top 150ms ease, 
+              transform 200ms ease;
 }
 
 .nav{
@@ -162,6 +184,10 @@
 }
 .nav ul li:nth-child(4){
   transition-delay: 40ms;
+}
+
+.nav ul li:nth-child(5){
+  transition-delay: 20ms;
 }
 
 

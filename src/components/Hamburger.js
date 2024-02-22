@@ -29,9 +29,9 @@ function Hamburger() {
           <li><NextLink href="#about" onClick={toggleMenu}>
               About
             </NextLink></li>
-          <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
-          <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-          <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+          <li><NextLink href="#experience" onClick={toggleMenu}>Experience</NextLink></li>
+          <li><NextLink href="#skills" onClick={toggleMenu}>Skills</NextLink></li>
+          <li><NextLink href="#projects" onClick={toggleMenu}>Projects</NextLink></li>
           
      
         </ul>

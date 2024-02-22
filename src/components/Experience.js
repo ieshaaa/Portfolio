@@ -27,9 +27,8 @@ const Experience = () => {
           <div className='h'>EXPERIENCE</div>
           <div style={{margin:"15px 0 20px 0"}}>
         <h5 className="my-heading">
-          <span className="color-head"  style={{color: '#F97F51'}}>Over my years of experience in web and software <development></development></span>
-          below are the Technologies and tools I use in problem solving, providing smooth and unique UI to users.
-        </h5>
+          <span className="color-head"  style={{color: '#F97F51'}}>Throughout my tenure in web and software development </span>
+          I excel in using industry tools for seamless and unique user experiences        </h5>
       </div>
 
             </div>

@@ -11,10 +11,10 @@ const Footersection = () => {
    <span className="first-footer">
           <div>Let’s Connect</div>
           <div className='footer-contact-img'>
-   <span><img src="linkdin.svg" alt="my image" /><a href="https://www.linkedin.com/in/isha-gupta-84a730217"></a></span>
-   <span><img src="github.svg" alt="my image" /><a href="https://github.com/ieshaaa"></a></span>
-   <span><img src="twitter.svg" alt="my image" /><a href="https://x.com/IshaGupta168?t=WMEajVsDJAX34kKQgvBh-w&s=09"></a></span>
-   <span><img src="instagram.svg" alt="my image" /><a href="https://www.instagram.com/_i.eshaa_/?igsh=MzRlODBiNWFlZA%3D%"></a></span>         
+   <span><a href="https://www.linkedin.com/in/isha-gupta-84a730217"><img src="linkdin.svg" alt="my image" /></a></span>
+   <span><a href="https://github.com/ieshaaa"><img src="github.svg" alt="my image" /></a></span>
+   <span><a href="https://x.com/IshaGupta168?t=WMEajVsDJAX34kKQgvBh-w&s=09"><img src="twitter.svg" alt="my image" /></a></span>
+   <span><a href="https://www.instagram.com/_i.eshaa_/?igsh=MzRlODBiNWFlZA%3D%"><img src="instagram.svg" alt="my image" /></a></span>         
     </div>
     </span>
     <span className="second-footer">

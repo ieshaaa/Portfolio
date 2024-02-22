@@ -46,8 +46,10 @@ body {
   .logo {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
+    font-style: italic;
+    font-family: fangsong;
   }
   
   .nav-links {
@@ -839,7 +841,7 @@ body {
   } */
   .jump-animation {
     padding: 16px;
-    margin: 10px 0;
+    margin: 20px 0;
     width: 370px;
     font-size: 20px;
     font-weight: 500;
@@ -850,12 +852,14 @@ body {
     box-sizing: border-box; /* Include padding and border in the total width/height */
     cursor: pointer;
     transform-origin: center;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0s;
     animation: bounce 2s infinite alternate; /* Apply the bounce effect on hover */
     }
 
   .jump-animation:hover {
   background-color: #0d0b0b; /* Change background color on hover */
+  animation: none;
+  transform: translateY(0); 
 }
   
   @keyframes jump {
@@ -1319,7 +1323,7 @@ h2 {
      
     }
     .edu{
-      padding: 20px 40px;
+      padding: 20px 30px;
     }
     .edu-container{
       font-size: 1.5rem;
@@ -1450,7 +1454,7 @@ h2 {
      /* height: 9%; */
       flex-direction: row;
       align-items: center;
-      padding: 2% 4%;
+      padding: 10px 30px;
 
       /* width: 100%; */
     }
@@ -1496,11 +1500,12 @@ h2 {
         gap: 70px;
     }
     .developer-img{
-      width: 80%;
+      width: 60%;
     }
     .about-content{
      max-width: 100%;
      font-size: 1.1rem;
+     max-height: 475px;
     }
 
     .edu{
@@ -1776,11 +1781,14 @@ h2 {
     font-size: 1.1rem;
     line-height: 1.5rem;
 }
+.developer-img {
+  width: 80%;
+}
 .skill-content-box {
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 }
 .skill-head{
-  width:75%;
+  width:77%;
 }
 .about-content {
   max-width: 100%;
@@ -1900,7 +1908,7 @@ h2 {
       overflow-x: hidden;
       
       backdrop-filter: blur(8px);
-      padding: 3.8% 30px ;
+      padding: 10px 30px ;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
       
 
